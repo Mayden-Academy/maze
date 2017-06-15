@@ -1,0 +1,51 @@
+<head>
+	<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+	<script src="game.js"></script>
+	<style>
+		.container {
+			margin: 0 auto;
+			width: 500px;
+		}
+		
+		svg {
+			border: 1px solid black;
+		}
+		
+		rect {
+			fill:#000000;
+		}
+
+        rect.path {
+            fill:#ffffff;
+        }
+		
+		button {
+			float: right;
+		}
+		
+		#timer {
+			float: left;
+		}
+		
+		.finish {
+			fill: blue;
+		}
+		
+		.red {
+			fill:red;
+		}
+	</style>
+	<title>Game</title>
+</head>
+<body>
+	<div class="container">
+		<svg width="500" height="500">
+			<rect x="0" y="0" width="500" height="500" />
+			<rect x="0" y="400" width="290" height="30" class="path" />
+
+			<rect x="260" y="400" width="30" height="30" class="finish" />
+		</svg>
+		<div id="timer">Time:<span>00:00</span></div>
+		<button onclick="play()">Start</button>
+	</div>
+</body>
