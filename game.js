@@ -7,7 +7,7 @@ function setTime() {
 }
 
 function play() {
-	$('rect').not('.finish, .path').hover(function() {
+	$('.bg').hover(function() {
 		resetPlay('You Died!')
 	})
 	
@@ -30,3 +30,8 @@ function resetPlay(output) {
 	alert(output)
 }
 
+
+
+$(function() {
+    $('button').click(play)
+})
