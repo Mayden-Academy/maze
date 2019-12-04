@@ -1,14 +1,23 @@
 var totalSeconds = 0
 var timer
+var box
 
 function setTime() {
 	++totalSeconds;
 	$('#timer span').html(padLeft(Math.floor(totalSeconds/60), "00") + ':' + padLeft(totalSeconds%60, "00"))
 }
 
-function play() {
+function play() {	
 	$('.bg').hover(function() {
 		resetPlay('You Died!')
+	})
+	
+	$('.box').hover(function() {
+		clearInterval(timer)
+		clearInterval(box)
+		totalSeconds = 0
+		$('rect').off()
+		alert('You hit the flashing box!')
 	})
 	
 	$('.finish').hover(function() {
@@ -25,12 +34,11 @@ function padLeft(str, pad) {
 
 function resetPlay(output) {
 	clearInterval(timer)
+	clearInterval(box)
 	totalSeconds = 0
 	$('rect').off()
 	alert(output)
 }
-
-
 
 $(function() {
     $('button').click(play)

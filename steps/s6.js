@@ -1,14 +1,10 @@
 var totalSeconds = 0
 var timer
-
 $(function () {
 	$('button').click(play)
 })
-
 function play() {
-	
 	timer = setInterval(setTime, 1000)
-	
 	$('.bg').hover(function() {
 		$('rect').off()
 		alert('You Died!')
@@ -25,8 +21,6 @@ function play() {
 		$('#timer span').html(totalSeconds)
 	})
 }
-
-
 function setTime() {
 	++totalSeconds
 	$('#timer span').html(totalSeconds)

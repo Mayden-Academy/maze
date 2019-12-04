@@ -11,23 +11,25 @@ Design Game v1
 Set up HTML File
 
 Sprint 2:
-Design Game v2
-Build game v2
+Create SVG outline
+
+sprint 3:
+Build game path
 
 Explain JavaScript & jQuery
 
-Sprint 3:
+Sprint 4:
 Create + link JS file
 Link jQuery
 Create Death alert
 
-Sprint 4: 
+Sprint 5: 
 Create Finish Box
 Create Finish alert
 
-Sprint 5:
+Sprint 6:
 Create Play button and cancel events on death
 tidy legacy code (functionalise everything)
 
-Sprint 6:
+Sprint 7:
 Create Timer

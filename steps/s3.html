@@ -1,26 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+		<script src="http://bit.ly/jquery-link"></script>
 		<script src="s3.js"></script>
 		<style>
-		
-	    .container {
-	                   margin: 0 auto;
-	                   width: 500px;
-	               }
+			.container {
+				margin: 0 auto;
+	            width: 500px;
+			}
 
-	               svg {
-	                   border: 1px solid black;
-	               }
+			svg {
+				border: 1px solid black;
+			}
 
-	               rect {
-	                   fill:#000000;
-	               }
+			rect {
+				fill:#000000;
+			}
 
-	               rect.path {
-	                   fill:#ffffff;
-	               }
+			rect.path {
+				fill:#ffffff;
+			}
 		</style>
 		<title>Game</title>
 	</head>
@@ -29,7 +28,7 @@
 		            <svg width="500" height="500">
 		                <rect x="0" y="0" width="500" height="500" class="bg" />
 
-		                <rect x="0" y="50" width="290" height="30" />
+		                <rect x="0" y="50" width="290" height="30" class="path" />
 		                <rect x="0" y="10" width="290" height="30" class="path" />
 		                <rect x="260" y="10" width="30" height="100" class="path" />
 		                <rect x="50" y="110" width="240" height="30" class="path" />
